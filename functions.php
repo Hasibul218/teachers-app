@@ -135,6 +135,9 @@ function existingCell($cell){
 	}
 	//database have the mail or not check ends
 }
+/**
+ * Delete Teacher From database function
+ */
 $id =" ";
 if (isset($_GET['id'])) {
 	deleteTeacher($_GET['id']);

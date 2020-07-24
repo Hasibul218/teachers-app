@@ -135,5 +135,16 @@ function existingCell($cell){
 	}
 	//database have the mail or not check ends
 }
- ?>
+$id =" ";
+if (isset($_GET['id'])) {
+	deleteTeacher($_GET['id']);
+	echo $id = $_GET['id'];
 }
+function deleteTeacher($id){
+	global $connection;
+	$sql_delete_teacher = "DELETE FROM teachers WHERE id = '$id'";
+	$connection -> query($sql_delete_teacher);
+	header("location:table.php");
+}
+ ?>
+

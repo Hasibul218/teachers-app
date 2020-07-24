@@ -45,7 +45,7 @@
 							<td>
 								<a class="btn btn-sm btn-info" href="#">View</a>
 								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
+								<a class="btn btn-sm btn-danger" href="functions.php?id=<?php echo $final_data['id']; ?>" onclick="return confirm ('Are you sure to delete?');">Delete</a>
 							</td>
 						</tr>
 					<?php endwhile; ?>
